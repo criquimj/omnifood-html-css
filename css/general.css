@@ -76,6 +76,26 @@ strong {
 /* HELPER CLASSES */
 /*********************************/
 
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.list-item {
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 .container--centered {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -98,6 +118,15 @@ strong {
   display: grid;
   gap: 9.6rem 6.4rem;
 }
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
