@@ -17,6 +17,7 @@ Default: 1
 1.05
 1.2
 1.6
+1.8
 
 - Letter spacing
 -0.5px
@@ -64,6 +65,7 @@ Default: 9px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -71,6 +73,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 strong {
@@ -99,6 +102,7 @@ strong {
   font-size: 1.8rem;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .container--centered {
@@ -121,7 +125,8 @@ strong {
 
 .grid {
   display: grid;
-  gap: 9.6rem 6.4rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 /* .grid:last-child {
