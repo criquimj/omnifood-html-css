@@ -57,6 +57,11 @@ Default: 9px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e67d229c;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -145,6 +150,7 @@ strong {
 /* GENERAL COMPONENTS */
 /*********************************/
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -155,6 +161,10 @@ strong {
   border-radius: 9px;
   /* Put transition on original element */
   transition: all 300ms;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -179,6 +189,18 @@ strong {
   /* border: 3px solid #fff; */
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
