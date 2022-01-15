@@ -426,17 +426,17 @@
             <form name="contact-cta" class="cta-form" method="POST" data-netlify="true">
               <div>
                 <label for="full-name">Full Name</label>
-                <input id="full-name" required type="text" placeholder="Your name">
+                <input id="full-name" required type="text" placeholder="Your name" name="full-name">
               </div>
 
               <div>
                 <label for="email">Email address</label>
-                <input id="email" type="email" required placeholder="me@example.com">
+                <input id="email" type="email" required placeholder="me@example.com" name="email">
               </div>
 
               <div>
                 <label for="referral">Where did you hear about us?</label>
-                <select id="referral" name="referral" required>
+                <select id="referral" name="referral" required name="referral-select">
                   <option value="">Please choose one option:</option>
                   <option value="friends and family">Friends and family</option>
                   <option value="spotify">Spotify</option>
